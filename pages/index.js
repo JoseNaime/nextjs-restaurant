@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Cart from "../components/cart"
 import {ApolloProvider, ApolloClient, HttpLink, InMemoryCache} from '@apollo/client';
 import RestaurantList from '../components/restaurantList';
-import {InputGroup, InputGroupAddon, Input} from "reactstrap";
+import {InputGroup, Input} from "reactstrap";
 
 
 function Home() {
@@ -19,7 +19,7 @@ function Home() {
             <div className="search">
                 <h2> Local Restaurants</h2>
                 <InputGroup>
-                    <InputGroupAddon addonType="append"> Search </InputGroupAddon>
+
                     <Input
                         onChange={(e) =>
                             setQuery(e.target.value.toLocaleLowerCase())
